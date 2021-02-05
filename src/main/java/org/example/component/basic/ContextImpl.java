@@ -1,11 +1,15 @@
 package org.example.component.basic;
 
+import org.example.entity.ComponentEntity;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class FContextImpl implements FContext{
+public class ContextImpl implements IContext {
 
     private ConcurrentHashMap<String,Object> contextMap = new ConcurrentHashMap();
+
+    private ComponentEntity componentEntity = null;
 
     @Override
     public <T> T getKey(String key) {
@@ -31,4 +35,13 @@ public class FContextImpl implements FContext{
     public void resetContext() {
         contextMap.clear();
     }
+
+    public ComponentEntity getComponentConfig() {
+        return componentEntity;
+    }
+
+    public void setComponentConfig(ComponentEntity componentEntity) {
+        this.componentEntity = componentEntity;
+    }
+
 }

@@ -2,7 +2,7 @@ package org.example.component.basic;
 
 import java.util.Map;
 
-public interface FContext {
+public interface IContext {
 
     /**
      * 通过Key 获取指定类型的内容

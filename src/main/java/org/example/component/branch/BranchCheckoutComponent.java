@@ -1,26 +1,26 @@
 package org.example.component.branch;
 
-import org.example.component.basic.FComponent;
-import org.example.component.basic.FContext;
+import org.example.component.basic.AbstractComponent;
 
-public class BranchCheckoutComponent implements FComponent {
+public class BranchCheckoutComponent extends AbstractComponent<BranchContextImpl> {
 
     @Override
-    public boolean preExecuteCheck(FContext context) {
-        return false;
+    public boolean preExecuteCheck(BranchContextImpl context) {
+        return super.preExecuteCheck(context);
     }
 
     @Override
-    public boolean execute(FContext context) throws Exception {
-        return false;
+    public boolean execute(BranchContextImpl context) throws Exception {
+        return super.execute(context);
     }
 
     @Override
-    public boolean afterExecute(FContext context) {
-        return false;
+    public boolean afterExecute(BranchContextImpl context) {
+        return super.afterExecute(context);
     }
 
     @Override
-    public void executeExceptionHandler(FContext context) {
+    public void executeExceptionHandler(BranchContextImpl context) {
+        super.executeExceptionHandler(context);
     }
 }
