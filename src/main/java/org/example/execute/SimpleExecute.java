@@ -7,6 +7,9 @@ import org.example.task.handler.impl.SimpleTaskExecuteHandler;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 外部调用
+ */
 public class SimpleExecute {
 
     public static void main(String[] args) {

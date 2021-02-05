@@ -2,9 +2,7 @@ package org.example.task.handler.impl;
 
 import org.example.component.basic.IComponent;
 import org.example.component.basic.IContext;
-import org.example.component.basic.ContextImpl;
 import org.example.component.task.TaskContextImpl;
-import org.example.context.resolver.ContextResolver;
 import org.example.context.resolver.impl.SimpleTaskContextResolverHandler;
 import org.example.entity.TaskEntity;
 import org.example.task.TaskFactory;
@@ -12,6 +10,9 @@ import org.example.task.handler.TaskExecuteHandler;
 
 import java.util.Iterator;
 
+/**
+ * 任务执行代码
+ */
 public class SimpleTaskExecuteHandler implements TaskExecuteHandler {
 
     private SimpleTaskContextResolverHandler resolveHandler = new SimpleTaskContextResolverHandler();
