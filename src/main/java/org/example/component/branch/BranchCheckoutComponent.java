@@ -1,8 +1,8 @@
 package org.example.component.branch;
 
-import org.example.component.basic.AbstractComponent;
+import org.example.component.basic.BasicComponent;
 
-public class BranchCheckoutComponent extends AbstractComponent<BranchContextImpl> {
+public class BranchCheckoutComponent extends BasicComponent<BranchContextImpl> {
 
     @Override
     public boolean preExecuteCheck(BranchContextImpl context) {

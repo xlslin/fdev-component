@@ -4,7 +4,7 @@ import org.example.component.basic.IContext;
 
 public interface ContextResolver<R extends IContext,T> {
 
-    IContext resolve(R request);
+    R resolve(IContext request);
 
     boolean match(T component);
 

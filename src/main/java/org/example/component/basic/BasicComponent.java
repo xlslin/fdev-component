@@ -1,9 +1,6 @@
 package org.example.component.basic;
 
-import org.example.component.basic.IComponent;
-import org.example.component.basic.ContextImpl;
-
-abstract class AbstractComponent<T extends ContextImpl> implements IComponent<T> {
+public class BasicComponent<T extends ContextImpl> implements IComponent<T> {
     @Override
     public boolean preExecuteCheck(ContextImpl context) {
         return false;
